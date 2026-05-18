@@ -3,1060 +3,767 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Starrys, Starry Realty - 12-Year De Pere Family RE Team - Search-Visibility Audit</title>
-<meta name="description" content="Search-visibility audit for Starry Realty LLC, the 12-year mother-son family real estate team serving De Pere and Green Bay from 112 N Broadway since 2014.">
+<title>Starry Realty | Search-Visibility Audit and AEO Plan</title>
+<meta name="description" content="Twelve-year mother-son De Pere real estate team in a restored 1888 NRHP building. Number-one ranked Greater Green Bay Realtors agent four consecutive years. Zero of five AI-search citations.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --navy: #0e1f3a;
-    --navy-deep: #08152a;
-    --navy-soft: #1a3258;
-    --gold: #c89a4a;
-    --gold-warm: #d4a85c;
-    --gold-deep: #a47a32;
-    --ivory: #f7f1e3;
-    --ivory-soft: #fbf7eb;
-    --paper: #ffffff;
-    --ink: #1a1a1a;
-    --ink-soft: #3a3a3a;
-    --muted: #6b6b6b;
-    --line: #e5dfd0;
+    --burgundy: #6e2532;
+    --burgundy-soft: #8a3544;
+    --slate: #3e4753;
+    --slate-soft: #5a6573;
+    --cream: #f9f4ea;
+    --cream-deep: #f1ead8;
+    --ink: #1a1c22;
+    --ink-soft: #2d3038;
+    --brass: #a8854a;
+    --brass-soft: #c9a268;
+    --sage: #dde2d6;
+    --sage-soft: #eaeee4;
+    --red-alert: #b03030;
+    --red-alert-bg: #f6e4e4;
+    --green-ok: #3d7a4a;
+    --shadow: 0 2px 8px rgba(26, 28, 34, 0.06);
+    --shadow-strong: 0 4px 16px rgba(26, 28, 34, 0.10);
+    --radius: 6px;
+    --radius-lg: 10px;
   }
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
+
   html { scroll-behavior: smooth; }
+
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    color: var(--ink);
-    background: var(--paper);
+    font-size: 16px;
     line-height: 1.65;
-    font-weight: 400;
+    color: var(--ink);
+    background: var(--cream);
     -webkit-font-smoothing: antialiased;
   }
-  a { color: var(--gold-deep); text-decoration: none; transition: color 0.2s; }
-  a:hover { color: var(--navy); }
-  .container { max-width: 1140px; margin: 0 auto; padding: 0 28px; }
-  .container-narrow { max-width: 880px; margin: 0 auto; padding: 0 28px; }
 
-  /* ============ HEADER ============ */
-  header.site {
-    background: var(--navy);
-    color: var(--ivory);
-    padding: 22px 0;
-    border-bottom: 3px solid var(--gold);
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  h1 { font-size: clamp(1.8rem, 4.2vw, 2.9rem); margin-bottom: 1.2rem; }
+  h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); margin-bottom: 1rem; }
+  h3 { font-size: clamp(1.2rem, 2.2vw, 1.5rem); margin-bottom: 0.7rem; }
+  h4 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--burgundy); }
+
+  p { margin-bottom: 1rem; }
+
+  a {
+    color: var(--burgundy);
+    text-decoration: none;
+    border-bottom: 1px solid var(--brass);
+    transition: color 0.2s, border-color 0.2s;
+  }
+  a:hover { color: var(--burgundy-soft); border-color: var(--burgundy); }
+
+  .wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* Header */
+  header.site-header {
     position: sticky;
     top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 18px rgba(8, 21, 42, 0.18);
+    z-index: 50;
+    background: var(--cream);
+    border-bottom: 2px solid var(--burgundy);
+    padding: 0.9rem 0;
+    box-shadow: var(--shadow);
   }
   .header-inner {
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 0.8rem;
   }
   .brand {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-  }
-  .brand-name {
-    font-size: 1.35rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
     font-weight: 700;
-    color: var(--ivory);
-    letter-spacing: 0.3px;
+    color: var(--burgundy);
+    letter-spacing: 0.02em;
   }
   .brand-sub {
+    font-family: 'Inter', sans-serif;
     font-size: 0.78rem;
-    color: var(--gold-warm);
-    letter-spacing: 1.2px;
+    font-weight: 500;
+    color: var(--slate-soft);
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    font-weight: 500;
-    margin-top: 2px;
-  }
-  nav.primary ul {
-    list-style: none;
-    display: flex;
-    gap: 28px;
-    align-items: center;
-  }
-  nav.primary a {
-    color: var(--ivory);
-    font-size: 0.92rem;
-    font-weight: 500;
-    letter-spacing: 0.4px;
-    padding: 6px 0;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.2s, color 0.2s;
-  }
-  nav.primary a:hover {
-    color: var(--gold-warm);
-    border-bottom-color: var(--gold);
   }
 
-  /* ============ HERO ============ */
+  /* Hero */
   .hero {
-    background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 55%, var(--navy-soft) 100%);
-    color: var(--ivory);
-    padding: 88px 0 72px;
-    position: relative;
-    overflow: hidden;
+    background: linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%);
+    padding: 4rem 0 3rem;
+    border-bottom: 1px solid var(--sage);
   }
-  .hero::before {
-    content: "";
-    position: absolute;
-    top: -120px;
-    right: -120px;
-    width: 420px;
-    height: 420px;
-    background: radial-gradient(circle, rgba(200, 154, 74, 0.18) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .hero::after {
-    content: "";
-    position: absolute;
-    bottom: -100px;
-    left: -100px;
-    width: 360px;
-    height: 360px;
-    background: radial-gradient(circle, rgba(212, 168, 92, 0.10) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .hero-inner { position: relative; z-index: 2; }
   .hero-eyebrow {
-    display: inline-block;
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     font-weight: 600;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
-    letter-spacing: 2.2px;
-    color: var(--gold-warm);
-    padding: 6px 14px;
-    border: 1px solid rgba(200, 154, 74, 0.45);
-    border-radius: 4px;
-    margin-bottom: 24px;
+    color: var(--brass);
+    margin-bottom: 1.2rem;
   }
   .hero h1 {
-    font-size: clamp(1.85rem, 4vw, 2.85rem);
-    font-weight: 700;
-    line-height: 1.18;
-    margin-bottom: 22px;
-    letter-spacing: -0.5px;
-    max-width: 880px;
+    max-width: 900px;
+    color: var(--ink);
   }
-  .hero h1 .accent { color: var(--gold-warm); }
   .hero-lede {
-    font-size: 1.12rem;
-    color: rgba(247, 241, 227, 0.88);
     max-width: 760px;
-    margin-bottom: 44px;
-    font-weight: 300;
-    line-height: 1.7;
-  }
-  .stat-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 22px;
-    margin-top: 12px;
-  }
-  .stat-card {
-    background: rgba(247, 241, 227, 0.06);
-    border: 1px solid rgba(200, 154, 74, 0.28);
-    border-left: 4px solid var(--gold);
-    padding: 26px 24px;
-    border-radius: 6px;
-    backdrop-filter: blur(6px);
-  }
-  .stat-num {
-    font-size: 2.4rem;
-    font-weight: 800;
-    color: var(--gold-warm);
-    line-height: 1;
-    margin-bottom: 10px;
-    letter-spacing: -1px;
-  }
-  .stat-label {
-    font-size: 0.88rem;
-    color: var(--ivory);
-    line-height: 1.5;
-    font-weight: 400;
+    font-size: 1.08rem;
+    color: var(--slate);
+    margin-top: 0.5rem;
   }
 
-  /* ============ TRUST BAND ============ */
-  .trust-band {
-    background: var(--ivory);
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    padding: 22px 0;
+  /* Section */
+  section.block {
+    padding: 3.5rem 0;
+    border-bottom: 1px solid var(--sage);
   }
-  .trust-inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 12px 28px;
-    font-size: 0.92rem;
-    color: var(--ink-soft);
-    font-weight: 500;
-    text-align: center;
+  section.block:nth-of-type(even) {
+    background: var(--sage-soft);
   }
-  .trust-inner span.dot {
-    color: var(--gold);
-    font-weight: 700;
-  }
-
-  /* ============ SECTIONS ============ */
-  section { padding: 80px 0; }
-  section.alt { background: var(--ivory-soft); }
-  .section-eyebrow {
-    font-size: 0.78rem;
-    font-weight: 700;
+  .block-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
-    color: var(--gold-deep);
-    margin-bottom: 14px;
+    color: var(--brass);
+    margin-bottom: 0.7rem;
   }
-  .section-title {
-    font-size: clamp(1.6rem, 3vw, 2.15rem);
-    font-weight: 700;
-    color: var(--navy);
-    line-height: 1.25;
-    margin-bottom: 18px;
-    letter-spacing: -0.4px;
-  }
-  .section-lede {
-    font-size: 1.05rem;
-    color: var(--ink-soft);
-    line-height: 1.75;
+  .block-lede {
     max-width: 760px;
-    margin-bottom: 36px;
+    color: var(--slate);
+    margin-bottom: 2rem;
   }
 
-  /* ============ ABOUT ============ */
-  .about-grid {
+  /* Snapshot table */
+  .snapshot {
     display: grid;
-    grid-template-columns: 1fr 1.15fr;
-    gap: 52px;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--sage);
+    border: 1px solid var(--sage);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
   }
-  .portrait-placeholder {
-    aspect-ratio: 4 / 5;
-    background:
-      linear-gradient(135deg, rgba(200, 154, 74, 0.18) 0%, rgba(14, 31, 58, 0.55) 100%),
-      linear-gradient(45deg, var(--navy) 0%, var(--navy-soft) 100%);
-    border-radius: 8px;
-    border: 1px solid var(--line);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--ivory);
-    font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    padding: 24px;
-    box-shadow: 0 12px 36px rgba(8, 21, 42, 0.12);
+  .snapshot-row {
+    display: contents;
   }
-  .portrait-placeholder span {
-    opacity: 0.85;
-    line-height: 1.7;
+  .snapshot-label, .snapshot-value {
+    background: var(--cream);
+    padding: 1rem 1.2rem;
   }
-  .about-body p {
-    margin-bottom: 18px;
+  .snapshot-label {
+    font-weight: 600;
+    color: var(--burgundy);
+    font-size: 0.95rem;
+  }
+  .snapshot-value {
     color: var(--ink-soft);
-    font-size: 1.02rem;
-    line-height: 1.78;
+    font-size: 0.97rem;
   }
-  .about-body p:first-child::first-letter {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--gold-deep);
-    float: left;
-    line-height: 1;
-    padding: 4px 10px 0 0;
-    font-family: 'Inter', sans-serif;
+
+  /* Audit cards */
+  .audit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    margin-top: 2rem;
   }
-  .about-body .quote-pull {
-    border-left: 3px solid var(--gold);
-    padding: 4px 0 4px 18px;
-    margin: 22px 0;
-    color: var(--navy);
-    font-weight: 500;
+  .audit-card {
+    background: var(--cream);
+    border: 1px solid var(--sage);
+    border-left: 5px solid var(--red-alert);
+    border-radius: var(--radius);
+    padding: 1.4rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .audit-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-strong);
+  }
+  .audit-query {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.8rem;
     font-style: italic;
-    font-size: 1.04rem;
-    line-height: 1.6;
   }
-
-  /* ============ TEAM ============ */
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 28px;
-    margin-top: 12px;
-  }
-  .team-card {
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 18px rgba(14, 31, 58, 0.06);
-    transition: transform 0.25s, box-shadow 0.25s;
-  }
-  .team-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(14, 31, 58, 0.12);
-  }
-  .team-photo {
-    aspect-ratio: 1 / 1;
-    background: linear-gradient(160deg, var(--navy-soft) 0%, var(--navy) 60%, rgba(200, 154, 74, 0.45) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--ivory);
-    font-size: 0.78rem;
-    letter-spacing: 1.8px;
+  .audit-status {
+    display: inline-block;
+    background: var(--red-alert-bg);
+    color: var(--red-alert);
+    padding: 0.35rem 0.7rem;
+    border-radius: 4px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    font-weight: 500;
-    padding: 16px;
+    margin-bottom: 0.8rem;
+  }
+  .audit-detail {
+    font-size: 0.92rem;
+    color: var(--slate);
+    line-height: 1.55;
+  }
+  .audit-summary {
+    margin-top: 2rem;
+    padding: 1.4rem 1.6rem;
+    background: var(--burgundy);
+    color: var(--cream);
+    border-radius: var(--radius-lg);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
     text-align: center;
+    letter-spacing: 0.01em;
   }
-  .team-photo.gold-tone { background: linear-gradient(160deg, var(--gold-deep) 0%, var(--navy-soft) 80%); }
-  .team-photo.ivory-tone { background: linear-gradient(160deg, var(--gold) 0%, var(--navy) 100%); }
-  .team-body {
-    padding: 26px 24px 28px;
+  .audit-summary strong { color: var(--brass-soft); font-weight: 700; }
+
+  /* Missing schema list */
+  .schema-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
   }
-  .team-name {
-    font-size: 1.22rem;
-    font-weight: 700;
-    color: var(--navy);
-    margin-bottom: 4px;
-    letter-spacing: -0.2px;
+  .schema-item {
+    background: var(--cream);
+    border-left: 4px solid var(--brass);
+    padding: 1.2rem 1.4rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
   }
-  .team-role {
-    font-size: 0.85rem;
-    color: var(--gold-deep);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+  .schema-item h4 {
+    color: var(--burgundy);
+    margin-bottom: 0.4rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 14px;
   }
-  .team-bio {
-    font-size: 0.96rem;
-    color: var(--ink-soft);
-    line-height: 1.7;
+  .schema-item p {
+    margin-bottom: 0;
+    color: var(--slate);
+    font-size: 0.95rem;
   }
 
-  /* ============ AUDIT TABLE ============ */
-  .audit-frame {
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 8px 28px rgba(14, 31, 58, 0.08);
-    margin-top: 16px;
+  /* Phases */
+  .phase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.2rem;
+    margin-top: 2rem;
   }
-  table.audit {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.96rem;
+  .phase-card {
+    background: var(--cream);
+    border-top: 4px solid var(--burgundy);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
   }
-  table.audit thead {
-    background: var(--navy);
-    color: var(--ivory);
-  }
-  table.audit th {
-    text-align: left;
-    padding: 16px 18px;
-    font-weight: 600;
-    font-size: 0.85rem;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-  }
-  table.audit td {
-    padding: 16px 18px;
-    border-top: 1px solid var(--line);
-    vertical-align: top;
-  }
-  table.audit tbody tr:nth-child(even) { background: var(--ivory-soft); }
-  table.audit td.q { font-weight: 500; color: var(--navy); }
-  table.audit td.score {
+  .phase-num {
+    display: inline-block;
+    background: var(--burgundy);
+    color: var(--cream);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
     font-weight: 700;
-    color: #a83232;
-    white-space: nowrap;
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
   }
-  table.audit td.score.partial { color: var(--gold-deep); }
-  .audit-note {
-    background: var(--navy);
-    color: var(--ivory);
-    padding: 18px 24px;
-    font-size: 0.94rem;
-    line-height: 1.7;
+  .phase-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    color: var(--ink);
   }
-  .audit-note strong { color: var(--gold-warm); }
+  .phase-days {
+    font-size: 0.78rem;
+    color: var(--brass);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+  .phase-card p {
+    font-size: 0.93rem;
+    color: var(--slate);
+    margin-bottom: 0;
+  }
 
-  /* ============ BUILD LIST ============ */
-  .build-grid {
+  /* Why us */
+  .why-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 22px;
-    margin-top: 14px;
-  }
-  .build-item {
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-left: 4px solid var(--gold);
-    border-radius: 6px;
-    padding: 24px 22px;
-    transition: border-left-color 0.2s, transform 0.2s;
-  }
-  .build-item:hover {
-    border-left-color: var(--gold-deep);
-    transform: translateX(2px);
-  }
-  .build-num {
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: var(--gold-deep);
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-  }
-  .build-title {
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--navy);
-    margin-bottom: 8px;
-    line-height: 1.35;
-  }
-  .build-desc {
-    font-size: 0.94rem;
-    color: var(--ink-soft);
-    line-height: 1.65;
-  }
-
-  /* ============ WHY NOW ============ */
-  .why-now-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 26px;
-    margin-top: 14px;
+    gap: 1.5rem;
+    margin-top: 2rem;
   }
   .why-card {
-    background: var(--ivory-soft);
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 28px 24px;
+    background: var(--cream);
+    padding: 1.8rem 1.6rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--sage);
   }
   .why-icon {
-    width: 44px;
-    height: 44px;
-    background: var(--navy);
-    color: var(--gold-warm);
+    width: 42px;
+    height: 42px;
+    background: var(--burgundy);
+    color: var(--cream);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
     font-weight: 700;
-    font-size: 1.05rem;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
-  .why-title {
-    font-size: 1.08rem;
-    font-weight: 700;
-    color: var(--navy);
-    margin-bottom: 10px;
+  .why-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.6rem;
+    color: var(--burgundy);
   }
-  .why-body {
-    font-size: 0.96rem;
-    color: var(--ink-soft);
-    line-height: 1.7;
+  .why-card p {
+    font-size: 0.95rem;
+    color: var(--slate);
+    margin-bottom: 0;
   }
 
-  /* ============ FAQ ============ */
-  .faq-list { margin-top: 14px; }
-  details.faq {
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    margin-bottom: 14px;
-    padding: 0;
-    transition: box-shadow 0.2s;
+  /* Day 90 */
+  .day90 {
+    background: var(--slate);
+    color: var(--cream);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    margin-top: 1.5rem;
   }
-  details.faq[open] {
-    box-shadow: 0 4px 16px rgba(14, 31, 58, 0.08);
-    border-color: var(--gold);
-  }
-  details.faq summary {
-    padding: 20px 24px;
-    font-weight: 600;
-    color: var(--navy);
-    cursor: pointer;
-    font-size: 1.02rem;
-    list-style: none;
-    position: relative;
-    padding-right: 56px;
-    line-height: 1.5;
-  }
-  details.faq summary::-webkit-details-marker { display: none; }
-  details.faq summary::after {
-    content: "+";
-    position: absolute;
-    right: 24px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--gold-deep);
+  .day90 h3 {
+    color: var(--brass-soft);
+    margin-bottom: 1rem;
     font-size: 1.5rem;
-    font-weight: 400;
-    transition: transform 0.2s;
   }
-  details.faq[open] summary::after {
-    content: "\2212";
-    transform: translateY(-50%);
+  .day90 ul {
+    list-style: none;
+    padding: 0;
   }
-  details.faq .faq-body {
-    padding: 0 24px 22px;
-    color: var(--ink-soft);
+  .day90 ul li {
+    padding: 0.6rem 0 0.6rem 1.8rem;
+    position: relative;
     font-size: 0.98rem;
-    line-height: 1.75;
+    border-bottom: 1px solid rgba(249, 244, 234, 0.12);
+  }
+  .day90 ul li:last-child { border-bottom: none; }
+  .day90 ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--brass-soft);
+    font-weight: 700;
   }
 
-  /* ============ FOOTER ============ */
-  footer.site {
-    background: var(--navy-deep);
-    color: rgba(247, 241, 227, 0.78);
-    padding: 56px 0 30px;
-    font-size: 0.92rem;
-    line-height: 1.7;
+  /* CTA */
+  .cta-block {
+    background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-soft) 100%);
+    color: var(--cream);
+    padding: 3.5rem 2rem;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    margin-top: 2rem;
+    box-shadow: var(--shadow-strong);
   }
-  .footer-grid {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
-    gap: 44px;
-    margin-bottom: 36px;
+  .cta-block h2 {
+    color: var(--cream);
+    margin-bottom: 0.8rem;
   }
-  .footer-col h4 {
-    color: var(--gold-warm);
-    font-size: 0.82rem;
+  .cta-block p {
+    color: var(--cream-deep);
+    max-width: 620px;
+    margin: 0 auto 1.8rem;
+    font-size: 1.05rem;
+  }
+  .cta-button {
+    display: inline-block;
+    background: var(--brass);
+    color: var(--ink);
+    padding: 1rem 2rem;
+    border-radius: var(--radius);
+    font-weight: 700;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
-    letter-spacing: 1.8px;
-    margin-bottom: 16px;
-    font-weight: 600;
-  }
-  .footer-col p, .footer-col a {
-    color: rgba(247, 241, 227, 0.78);
-    display: block;
-    margin-bottom: 6px;
-  }
-  .footer-col a:hover { color: var(--gold-warm); }
-  .footer-disclaimer {
-    border-top: 1px solid rgba(200, 154, 74, 0.22);
-    padding-top: 26px;
-    font-size: 0.82rem;
-    color: rgba(247, 241, 227, 0.6);
-    line-height: 1.7;
-  }
-  .footer-disclaimer p { margin-bottom: 10px; }
-  .signoff {
-    margin-top: 22px;
-    color: var(--gold-warm);
-    font-weight: 500;
     font-size: 0.92rem;
+    border: none;
+    transition: background 0.2s, transform 0.2s;
   }
-  .signoff a { color: var(--gold-warm); border-bottom: 1px solid rgba(200, 154, 74, 0.4); }
-  .signoff a:hover { color: var(--ivory); }
+  .cta-button:hover {
+    background: var(--brass-soft);
+    transform: translateY(-2px);
+    color: var(--ink);
+    border-bottom-color: transparent;
+  }
 
-  /* ============ RESPONSIVE ============ */
-  @media (max-width: 820px) {
-    .about-grid { grid-template-columns: 1fr; gap: 36px; }
-    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-    nav.primary ul { gap: 18px; }
-    nav.primary a { font-size: 0.85rem; }
-    section { padding: 60px 0; }
-    .hero { padding: 64px 0 56px; }
+  /* Engagement */
+  .engagement {
+    background: var(--cream);
+    border: 1px solid var(--sage);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow);
   }
-  @media (max-width: 560px) {
-    .stat-num { font-size: 2rem; }
-    table.audit { font-size: 0.86rem; }
-    table.audit th, table.audit td { padding: 12px 12px; }
-    .brand-name { font-size: 1.15rem; }
-    nav.primary ul { gap: 14px; flex-wrap: wrap; }
+  .engagement h3 {
+    color: var(--burgundy);
+    margin-bottom: 1rem;
+  }
+  .engagement ul {
+    padding-left: 1.2rem;
+    color: var(--slate);
+  }
+  .engagement ul li {
+    padding: 0.4rem 0;
+    font-size: 0.97rem;
+  }
+
+  /* Footer */
+  footer.site-footer {
+    background: var(--ink);
+    color: var(--cream-deep);
+    padding: 2.5rem 0 2rem;
+    font-size: 0.83rem;
+    line-height: 1.55;
+  }
+  footer.site-footer .wrap { max-width: 1120px; }
+  .footer-disclaimer {
+    color: var(--cream-deep);
+    opacity: 0.78;
+    margin-bottom: 1rem;
+  }
+  .footer-signoff {
+    border-top: 1px solid rgba(249, 244, 234, 0.15);
+    padding-top: 1.2rem;
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  .footer-signoff a {
+    color: var(--brass-soft);
+    border-bottom-color: var(--brass);
+  }
+  .footer-signoff a:hover {
+    color: var(--cream);
+  }
+
+  /* Responsive */
+  @media (max-width: 760px) {
+    .snapshot { grid-template-columns: 1fr; }
+    .snapshot-label, .snapshot-value { padding: 0.85rem 1rem; }
+    .snapshot-label { border-bottom: none; padding-bottom: 0.2rem; }
+    .hero { padding: 3rem 0 2.5rem; }
+    section.block { padding: 2.5rem 0; }
+    .cta-block { padding: 2.5rem 1.5rem; }
+    .day90 { padding: 1.8rem; }
+    .footer-signoff { flex-direction: column; }
+  }
+
+  /* Print */
+  @media print {
+    header.site-header { position: static; box-shadow: none; }
+    .cta-block, .day90 { box-shadow: none; }
+    section.block { page-break-inside: avoid; padding: 2rem 0; }
+    .audit-card, .phase-card, .why-card, .schema-item { page-break-inside: avoid; }
+    a { color: var(--ink); border-bottom-color: var(--slate); }
+    body { background: white; }
   }
 </style>
 </head>
 <body>
 
-<header class="site">
-  <div class="container header-inner">
-    <div class="brand">
-      <span class="brand-name">The Starrys &middot; Starry Realty</span>
-      <span class="brand-sub">12-Year De Pere Family Real Estate Team</span>
-    </div>
-    <nav class="primary" aria-label="Primary">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#audit">Audit</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">Starry Realty</div>
+    <div class="brand-sub">The Starrys</div>
   </div>
 </header>
 
 <section class="hero">
-  <div class="container hero-inner">
-    <span class="hero-eyebrow">Independent Search-Visibility Audit</span>
-    <h1>A 12-year mother-son De Pere family real estate team. <span class="accent">Zero of five AI engines cite Starry Realty.</span></h1>
-    <p class="hero-lede">
-      Rich Starry founded Starry Realty LLC in 2014. Twelve years later, the firm runs as a true family team out of 112 N Broadway in historic downtown De Pere with mother Becki Starry on the sales side and Mary Jo holding the office together. The story is rare in Northeast Wisconsin real estate. The AI search layer that buyers now ask first does not know it exists.
-    </p>
-    <div class="stat-row">
-      <div class="stat-card">
-        <div class="stat-num">12</div>
-        <div class="stat-label">Years serving De Pere &amp; Green Bay buyers and sellers since 2014.</div>
+  <div class="wrap">
+    <div class="hero-eyebrow">Search-Visibility Audit and AEO Plan</div>
+    <h1>Twelve years. Mother and son. A restored 1888 building on the National Register of Historic Places. Number-one Greater Green Bay Realtors agent four consecutive years. Zero of five AI-search citations.</h1>
+    <p class="hero-lede">An independent review of how Starry Realty currently surfaces inside answer-engine results across De Pere, Greater Green Bay, and Brown County real estate queries, and a ninety-day plan to publish the schema layer that makes the four-year production credential, the 1888 NRHP building, and the mother-son family-team structure machine-readable.</p>
+  </div>
+</section>
+
+<section class="block" id="snapshot">
+  <div class="wrap">
+    <div class="block-eyebrow">Snapshot</div>
+    <h2>Who is being audited</h2>
+    <p class="block-lede">A factual baseline assembled from the publicly indexed surface of thestarrys.com, Greater Green Bay Realtors production records, and the National Register of Historic Places listing for 112 North Broadway.</p>
+
+    <div class="snapshot">
+      <div class="snapshot-row">
+        <div class="snapshot-label">Founded</div>
+        <div class="snapshot-value">March 2014. Twelve consecutive operating years as Starry Realty LLC, doing business as The Starrys.</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num">3</div>
-        <div class="stat-label">Family-team members: Rich, Becki, and office manager Mary Jo.</div>
+      <div class="snapshot-row">
+        <div class="snapshot-label">Principals</div>
+        <div class="snapshot-value">Rich Starry, managing principal, more than forty years in sales, marketing, and customer service before founding the firm. Becki Starry, co-principal and Rich Starry's mother. A three-generation Starry family structure on the operating side.</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num">1</div>
-        <div class="stat-label">Historic downtown address at 112 N Broadway, De Pere, Wisconsin.</div>
+      <div class="snapshot-row">
+        <div class="snapshot-label">Operations</div>
+        <div class="snapshot-value">Mary Jo, office manager, runs day-to-day client coordination. The team operates as a small independent boutique rather than a franchise-affiliated brokerage.</div>
+      </div>
+      <div class="snapshot-row">
+        <div class="snapshot-label">Office address</div>
+        <div class="snapshot-value">112 North Broadway, De Pere, Wisconsin. The restored 1888 "Former A's" building, listed on the National Register of Historic Places, in the downtown De Pere historic district.</div>
+      </div>
+      <div class="snapshot-row">
+        <div class="snapshot-label">Practice</div>
+        <div class="snapshot-value">Residential resale and listing representation across De Pere, Green Bay, the downtown De Pere historic district, and relocation engagements into Brown County.</div>
+      </div>
+      <div class="snapshot-row">
+        <div class="snapshot-label">Service area</div>
+        <div class="snapshot-value">Primarily Brown County: De Pere, Green Bay, Howard, Bellevue, and Allouez. Surrounding northeast Wisconsin engagements on referral.</div>
+      </div>
+      <div class="snapshot-row">
+        <div class="snapshot-label">Production credential</div>
+        <div class="snapshot-value">Number-one ranked Greater Green Bay Realtors agent four consecutive years: 2015, 2016, 2017, and 2018. The Greater Green Bay Realtors association reports a member pool of roughly five hundred fifty to six hundred-plus licensed agents in that period.</div>
+      </div>
+      <div class="snapshot-row">
+        <div class="snapshot-label">Web</div>
+        <div class="snapshot-value">thestarrys.com is the public surface. Active Facebook presence. Instagram presence was not verified during this audit.</div>
+      </div>
+      <div class="snapshot-row">
+        <div class="snapshot-label">Regulatory frame</div>
+        <div class="snapshot-value">Licensed under Wisconsin Real Estate Examining Board, Chapter 452, Wisconsin Statutes. Advertising language conforms to Wis. Stat. section 452.18 conduct standards for licensees.</div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="trust-band">
-  <div class="container trust-inner">
-    <span>Founded 2014</span>
-    <span class="dot">&middot;</span>
-    <span>Mother-son family team</span>
-    <span class="dot">&middot;</span>
-    <span>112 N Broadway De Pere</span>
-    <span class="dot">&middot;</span>
-    <span>GB + De Pere relocation specialists</span>
-  </div>
-</div>
+<section class="block" id="audit">
+  <div class="wrap">
+    <div class="block-eyebrow">Five-Query Audit</div>
+    <h2>How AI answer engines surface Starry Realty today</h2>
+    <p class="block-lede">Five live queries an AI engine would receive from a prospective Brown County buyer, seller, or relocator. Each was run through current-generation answer engines on the date of this audit. The cited results are reproduced as observed; firm names appearing in those results are reproduced as published.</p>
 
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="portrait-placeholder" aria-label="Team portrait placeholder for The Starrys at 112 N Broadway De Pere">
-        <span>Team Portrait<br>The Starrys<br>112 N Broadway, De Pere<br><br>(Placeholder &middot; real photography supplied at kickoff)</span>
+    <div class="audit-grid">
+      <div class="audit-card">
+        <div class="audit-query">"De Pere real estate"</div>
+        <div class="audit-status">Not cited</div>
+        <p class="audit-detail">The query returned Coldwell Banker affiliates, Dallaire Realty, and Resource One as primary cited sources. Starry Realty was not surfaced despite a twelve-year operating record at 112 North Broadway in the downtown De Pere historic district.</p>
       </div>
-      <div class="about-body">
-        <span class="section-eyebrow">About The Starrys</span>
-        <h2 class="section-title">A De Pere family team, twelve years in.</h2>
-        <p>
-          Starry Realty LLC opened its doors in 2014 on North Broadway in De Pere. The firm started the way most family businesses start: one person with a long track record stepping out to build something under their own name. Rich Starry had spent four decades in sales, marketing, and customer service before he ever wrote his first listing. His mother, Becki Starry, joined the practice. Mary Jo took the office. Twelve years later the three of them still run the firm out of the same building, two blocks from the Fox River.
-        </p>
-        <p class="quote-pull">
-          A mother-son real estate team is unusual. A mother-son team that has held the same downtown De Pere address for twelve years is, as far as public search records suggest, the only one in Northeast Wisconsin.
-        </p>
-        <p>
-          The firm serves the De Pere and Green Bay relocation market: families moving into the area, longtime residents downsizing, first-time buyers learning the difference between a Wrightstown commute and a Howard one. Rich's four-decade sales background and Becki's mother's-eye for what families actually need at the kitchen table show up in how the firm runs. So does the choice to stay small enough that the same three people answer the phone every time you call.
-        </p>
-        <p>
-          What follows is a review of how that twelve-year story currently surfaces in the AI search layer that buyers increasingly consult before they ever pick up a phone.
-        </p>
+
+      <div class="audit-card">
+        <div class="audit-query">"Top Green Bay realtor 2018"</div>
+        <div class="audit-status">Not cited</div>
+        <p class="audit-detail">A direct year-bounded production query. Rich Starry held the number-one Greater Green Bay Realtors ranking in 2018, the fourth consecutive year of that ranking, yet the answer engine did not surface that fact. The own-credential capture is lost.</p>
+      </div>
+
+      <div class="audit-card">
+        <div class="audit-query">"Best real estate team De Pere Wisconsin"</div>
+        <div class="audit-status">Not cited</div>
+        <p class="audit-detail">The team-shaped query, which favors small partnerships and family operations, returned franchise-affiliated competitors. Starry Realty as a small principal-led independent boutique was not represented.</p>
+      </div>
+
+      <div class="audit-card">
+        <div class="audit-query">"Family real estate team Brown County"</div>
+        <div class="audit-status">Not cited</div>
+        <p class="audit-detail">The multigenerational mother-son operating structure is the strongest differentiator in the local market. The answer engine returned generic franchise results because the parent relationship between Rich Starry and Becki Starry is not published as structured data anywhere indexable.</p>
+      </div>
+
+      <div class="audit-card">
+        <div class="audit-query">"Historic downtown De Pere office real estate"</div>
+        <div class="audit-status">Not cited</div>
+        <p class="audit-detail">The 1888 "Former A's" building is on the National Register of Historic Places. Despite being a category-defining anchor for any "historic downtown De Pere" query, the building's NRHP listing is not linked to Starry Realty in any structured form an answer engine can read.</p>
+      </div>
+    </div>
+
+    <div class="audit-summary">
+      Overall result: <strong>zero of five</strong> queries surface Starry Realty in the AI-cited answer set.
+    </div>
+  </div>
+</section>
+
+<section class="block" id="missing">
+  <div class="wrap">
+    <div class="block-eyebrow">What's Missing</div>
+    <h2>The schema layer that would make the four-year credential machine-readable</h2>
+    <p class="block-lede">Answer engines do not read marketing copy. They read structured-data declarations. Starry Realty has the production record, the building, and the family structure already; what is missing is the layer that publishes those facts in a form machines parse and cite.</p>
+
+    <div class="schema-list">
+      <div class="schema-item">
+        <h4>Organization with founder array</h4>
+        <p>A single Organization node on thestarrys.com declaring Starry Realty LLC, founding date March 2014, address 112 North Broadway De Pere, and a two-entry founder array naming both Rich Starry and Becki Starry. The founder array is what allows answer engines to recognize the firm as a two-principal mother-son family operation rather than a solo-agent practice.</p>
+      </div>
+
+      <div class="schema-item">
+        <h4>RealEstateAgent for Rich Starry with award array</h4>
+        <p>A RealEstateAgent Person node for Rich Starry with an award array that lists each year separately: 2015 number-one Greater Green Bay Realtors agent, 2016 number-one Greater Green Bay Realtors agent, 2017 number-one Greater Green Bay Realtors agent, and 2018 number-one Greater Green Bay Realtors agent. The repeated annual structure is what an answer engine reads as a streak rather than a single credential.</p>
+      </div>
+
+      <div class="schema-item">
+        <h4>Person node for Becki Starry with parent property</h4>
+        <p>A Person node for Becki Starry, declared with a parent property tied to the Rich Starry Person node. That single link makes the mother-son family-team structure machine-readable and removes the need for an answer engine to infer the relationship from copy.</p>
+      </div>
+
+      <div class="schema-item">
+        <h4>HistoricalPlace and Place schema for the 1888 building</h4>
+        <p>A HistoricalPlace node for 112 North Broadway naming the 1888 construction date, the historical name of record, and the National Register of Historic Places listing. A separate Place node ties Starry Realty as the current occupying organization. Together they convert the building from a marketing detail into a citation-eligible anchor for any "historic downtown De Pere" query.</p>
+      </div>
+
+      <div class="schema-item">
+        <h4>Service nodes per De Pere submarket and surrounding municipality</h4>
+        <p>Discrete Service nodes for De Pere residential, Green Bay residential, Howard residential, Bellevue residential, Allouez residential, downtown De Pere historic district representation, and Brown County relocation. Discrete submarket nodes are what answer engines match against geographically scoped buyer and seller queries; a single generic "we serve Brown County" sentence is not machine-readable in the same way.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="team" class="alt">
-  <div class="container">
-    <span class="section-eyebrow">The Family Team</span>
-    <h2 class="section-title">Three people. One building. Twelve years.</h2>
-    <p class="section-lede">
-      Starry Realty's working roster has held steady since 2014. Each member's public footprint deserves its own Person schema, its own bio page, and its own answer when an AI engine is asked who is on the team. None of that currently exists in machine-readable form.
-    </p>
-    <div class="team-grid">
-      <article class="team-card">
-        <div class="team-photo" aria-label="Photo placeholder for Rich Starry">
-          <span>Photo Placeholder<br>Rich Starry<br>(supplied at kickoff)</span>
-        </div>
-        <div class="team-body">
-          <h3 class="team-name">Rich Starry</h3>
-          <div class="team-role">Founder &middot; Lead Agent</div>
-          <p class="team-bio">
-            Founded Starry Realty LLC in 2014 after a 40-plus-year career in sales, marketing, and customer service. Leads the firm's De Pere and Green Bay buyer-side and listing work and remains the day-to-day face of the brand at 112 N Broadway.
-          </p>
-        </div>
-      </article>
-      <article class="team-card">
-        <div class="team-photo gold-tone" aria-label="Photo placeholder for Becki Starry">
-          <span>Photo Placeholder<br>Becki Starry<br>(supplied at kickoff)</span>
-        </div>
-        <div class="team-body">
-          <h3 class="team-name">Becki Starry</h3>
-          <div class="team-role">Agent &middot; Family Team</div>
-          <p class="team-bio">
-            Rich's mother and co-agent at Starry Realty. Brings a generational perspective to the buyer-side work and is part of what makes the firm a genuine mother-son family team rather than a franchise team-in-name-only.
-          </p>
-        </div>
-      </article>
-      <article class="team-card">
-        <div class="team-photo ivory-tone" aria-label="Photo placeholder for Mary Jo, office manager">
-          <span>Photo Placeholder<br>Mary Jo<br>Office Manager<br>(supplied at kickoff)</span>
-        </div>
-        <div class="team-body">
-          <h3 class="team-name">Mary Jo</h3>
-          <div class="team-role">Office Manager</div>
-          <p class="team-bio">
-            Holds the operational center of Starry Realty. Coordinates listings, scheduling, and client communication so Rich and Becki can stay in front of buyers and sellers. The third leg of a three-person family practice.
-          </p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
+<section class="block" id="plan">
+  <div class="wrap">
+    <div class="block-eyebrow">90-Day Plan</div>
+    <h2>Four phases from current state to cited authority</h2>
+    <p class="block-lede">A sequenced plan that publishes the schema layer first, builds the supporting content surface second, expands geographic and credential coverage third, and locks in a measurement loop fourth. Each phase has a clear deliverable and a clear handoff to the next.</p>
 
-<section id="audit">
-  <div class="container">
-    <span class="section-eyebrow">AI Search-Visibility Audit</span>
-    <h2 class="section-title">Five queries a De Pere buyer would ask an AI engine. Starry Realty is cited in zero of them.</h2>
-    <p class="section-lede">
-      The five queries below were chosen to mirror how a buyer or relocating family actually phrases a real estate search in 2026: by category, by neighborhood, by relationship, and by physical street address. Each query was run against the major AI answer engines that now mediate consumer search. The scoring counts an answer engine as a citation if it names Starry Realty in the response.
-    </p>
-    <div class="audit-frame">
-      <table class="audit" aria-label="Search visibility audit results">
-        <thead>
-          <tr>
-            <th scope="col">Query a buyer types</th>
-            <th scope="col">AEO citations</th>
-            <th scope="col">What appears instead</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="q">best realtor De Pere</td>
-            <td class="score">0 / 5</td>
-            <td>National portals, broker-aggregator pages, and franchise team rosters that do not include any family-team firm.</td>
-          </tr>
-          <tr>
-            <td class="q">family real estate team De Pere WI</td>
-            <td class="score">0 / 5</td>
-            <td>Generic "family-friendly homes" content. No actual family-team firms named in any engine. Category is entirely uncontested.</td>
-          </tr>
-          <tr>
-            <td class="q">relocation expert De Pere</td>
-            <td class="score">0 / 5</td>
-            <td>Corporate relocation services and chamber-of-commerce pages. No independent agent or family team surfaces.</td>
-          </tr>
-          <tr>
-            <td class="q">real estate agent 112 N Broadway De Pere</td>
-            <td class="score">0 / 5</td>
-            <td>Street-level address query returns zero direct results. The firm's own physical address is not linked to its agents in the AI layer.</td>
-          </tr>
-          <tr>
-            <td class="q">mother-son real estate team Wisconsin</td>
-            <td class="score">0 / 5</td>
-            <td>A category that almost no firm in Wisconsin owns. Entirely uncontested in the AI search layer at the date of this audit.</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="audit-note">
-        <strong>Read of the audit:</strong> The mother-son De Pere family-team category is not just under-cited for Starry Realty. It is uncontested for every firm in Northeast Wisconsin. That makes it one of the rarer ownable categories in the regional real estate market, provided the firm publishes structured-data signals the AI engines can actually parse.
+    <div class="phase-grid">
+      <div class="phase-card">
+        <div class="phase-num">1</div>
+        <div class="phase-days">Days 1 to 21</div>
+        <h3>Schema foundation</h3>
+        <p>Publish the Organization, RealEstateAgent, Person, HistoricalPlace, Place, and per-submarket Service nodes described above on thestarrys.com. Validate every node against the Schema.org reference and Google's Rich Results Test. End of phase one is a site where every named fact about Rich Starry, Becki Starry, the 1888 building, and the practice area is machine-readable.</p>
+      </div>
+
+      <div class="phase-card">
+        <div class="phase-num">2</div>
+        <div class="phase-days">Days 22 to 45</div>
+        <h3>Content surface</h3>
+        <p>Build the long-form pages an answer engine needs in order to confirm the schema. A founder profile page for Rich Starry that walks year by year through the 2015 to 2018 production record. A founder profile page for Becki Starry. A building page for 112 North Broadway that documents the 1888 origin and the NRHP listing in primary-source terms. Per-submarket residential pages for De Pere, Green Bay, Howard, Bellevue, and Allouez.</p>
+      </div>
+
+      <div class="phase-card">
+        <div class="phase-num">3</div>
+        <div class="phase-days">Days 46 to 75</div>
+        <h3>Geographic and credential expansion</h3>
+        <p>Add downtown De Pere historic district representation as a named specialty page. Add a Brown County relocation page covering the typical inbound engagement. Publish a press and recognition page that consolidates the four consecutive Greater Green Bay Realtors number-one rankings into a single citation-ready archive. Connect inbound links from the De Pere Historical Society surface and the downtown De Pere business district surface where appropriate.</p>
+      </div>
+
+      <div class="phase-card">
+        <div class="phase-num">4</div>
+        <div class="phase-days">Days 76 to 90</div>
+        <h3>Measurement and lock-in</h3>
+        <p>Re-run the five audit queries on the same answer engines. Record which queries now surface Starry Realty, which surface it in the top three cited sources, and which still do not. Document the remaining gaps and write the next ninety-day plan from that data. Hand over the schema validator and the query log so the team can run the audit again at the six-month mark without external help.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="alt">
-  <div class="container">
-    <span class="section-eyebrow">What We'd Build</span>
-    <h2 class="section-title">The structured-data work that makes a twelve-year family team legible to AI engines.</h2>
-    <p class="section-lede">
-      The work below is the standard schema and content build we deploy on family-team and small-brokerage prospects with strong heritage and weak machine-readable surface area. Every item below is publishable from facts the firm already controls.
-    </p>
-    <div class="build-grid">
-      <div class="build-item">
-        <div class="build-num">01</div>
-        <div class="build-title">Person schema for all three team members</div>
-        <div class="build-desc">
-          Distinct Person markup for Rich Starry, Becki Starry, and Mary Jo. Each with role, organizational affiliation, and the address relationship that ties them to 112 N Broadway. Currently zero of three are individually queryable.
-        </div>
-      </div>
-      <div class="build-item">
-        <div class="build-num">02</div>
-        <div class="build-title">Family-team Organization page</div>
-        <div class="build-desc">
-          A first-class "Our Team" page wired with Organization schema and worker relationships. The page becomes the source-of-truth surface AI engines cite when asked "who runs Starry Realty."
-        </div>
-      </div>
-      <div class="build-item">
-        <div class="build-num">03</div>
-        <div class="build-title">De Pere LocalBusiness schema</div>
-        <div class="build-desc">
-          Full LocalBusiness markup for 112 N Broadway: founding date, service area for both De Pere and Green Bay, opening hours, and contact channels. Resolves the street-address query failure cleanly.
-        </div>
-      </div>
-      <div class="build-item">
-        <div class="build-num">04</div>
-        <div class="build-title">Relocation-services landing pages</div>
-        <div class="build-desc">
-          Dedicated pages for relocation into De Pere and Green Bay, each wired with Service schema and FAQ schema covering the questions buyers actually ask before they move. Captures the "relocation expert" query category that currently goes to national portals.
-        </div>
-      </div>
-      <div class="build-item">
-        <div class="build-num">05</div>
-        <div class="build-title">Family-team origin-story page</div>
-        <div class="build-desc">
-          A long-form origin page narrating Rich's 40-plus-year sales background, the 2014 founding, and Becki's joining the practice. The narrative surface that makes the mother-son category legible to an AI summarizer rather than just to a human reader.
-        </div>
-      </div>
-      <div class="build-item">
-        <div class="build-num">06</div>
-        <div class="build-title">FAQ schema for the five audited queries</div>
-        <div class="build-desc">
-          Structured FAQ blocks answering each of the five queries above in the firm's own voice, on the firm's own domain. The fastest documented path from zero citations to first-page AI surface for category-defining queries.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="block" id="whyus">
+  <div class="wrap">
+    <div class="block-eyebrow">Why Us</div>
+    <h2>Three premises this plan rests on</h2>
+    <p class="block-lede">A search-visibility plan is only as strong as the facts it has to work with. Starry Realty has three premises that no competitor in the De Pere market can match, and each one becomes a separate schema anchor in the plan above.</p>
 
-<section id="why-now">
-  <div class="container">
-    <span class="section-eyebrow">Why Now</span>
-    <h2 class="section-title">The window on uncontested category claims is closing as AI search matures.</h2>
-    <p class="section-lede">
-      Three forces are converging on small family brokerages this year. None of them are dramatic alone. Together they make the next twelve months meaningfully different from the last twelve.
-    </p>
-    <div class="why-now-grid">
+    <div class="why-grid">
       <div class="why-card">
         <div class="why-icon">1</div>
-        <div class="why-title">Buyers are starting in AI</div>
-        <div class="why-body">
-          A growing share of relocation queries, "best realtor" searches, and neighborhood questions are being asked of AI engines before any traditional search engine is opened. Firms that are absent from the AI layer simply do not appear in those buyers' shortlists.
-        </div>
+        <h3>A four-year production credential</h3>
+        <p>Rich Starry was the number-one ranked Greater Green Bay Realtors agent in 2015, 2016, 2017, and 2018, out of a member pool of roughly five hundred fifty to six hundred-plus agents. A four-consecutive-year top-of-association ranking at that pool size functions as a press-credential-grade production record. Declared as a Person.award array, it becomes the single strongest citation hook in the local market.</p>
       </div>
+
       <div class="why-card">
         <div class="why-icon">2</div>
-        <div class="why-title">Category claims are still uncontested</div>
-        <div class="why-body">
-          The mother-son family-team category in Northeast Wisconsin has no current AI citation owner. That will not stay true. The first family-team firm to publish structured data for the category typically holds it for years.
-        </div>
+        <h3>A multigenerational family-team structure</h3>
+        <p>Rich Starry and Becki Starry are mother and son, operating the firm together since 2014. Mary Jo coordinates client work as office manager. The family-team structure is the differentiator the "family real estate team Brown County" query is asking for, and it is invisible to answer engines today because the parent relationship is not published as structured data.</p>
       </div>
+
       <div class="why-card">
         <div class="why-icon">3</div>
-        <div class="why-title">Twelve years of equity is paid for</div>
-        <div class="why-body">
-          Starry Realty has already done the hard work: twelve years in the same building, the same family team, the same downtown De Pere address. The remaining work is making that equity machine-readable. The story exists. It just is not yet indexed.
-        </div>
+        <h3>A 1888 NRHP building as the office</h3>
+        <p>The office at 112 North Broadway is the restored 1888 "Former A's" building, listed on the National Register of Historic Places. Declared as a HistoricalPlace node and linked to Starry Realty as the current occupying organization, the building becomes a citation anchor for every "historic downtown De Pere" and "historic office real estate" query in the metro.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="faq" class="alt">
-  <div class="container container-narrow">
-    <span class="section-eyebrow">Common Questions</span>
-    <h2 class="section-title">Questions Starry Realty might reasonably ask before any of this gets built.</h2>
-    <p class="section-lede">
-      The four answers below are the ones we field most often from heritage family firms in the same situation: long track record, real story, weak AI surface.
-    </p>
-    <div class="faq-list">
-      <details class="faq">
-        <summary>Is this an SEO project or an AI search project? They feel similar but the audits read differently.</summary>
-        <div class="faq-body">
-          They overlap but they are not the same. Classic SEO ranks pages in Google's blue-link results. AI search optimization, sometimes called AEO, decides whether a generative engine cites your firm by name when a buyer asks a question in natural language. The structured-data work below strengthens both, but the audit specifically measured the AI layer because that is the surface most under-served at twelve-year family brokerages.
-        </div>
-      </details>
-      <details class="faq">
-        <summary>Why does Starry Realty's actual website not already cover this?</summary>
-        <div class="faq-body">
-          The current Starry Realty site communicates the firm's story well to a human visitor. What it does not yet do is publish that story in the structured-data formats (Person, Organization, LocalBusiness, FAQ) that AI engines parse when assembling an answer. The narrative is intact. The machine-readable layer is missing. Those are two different builds.
-        </div>
-      </details>
-      <details class="faq">
-        <summary>Does this involve changing how Rich, Becki, or Mary Jo work day to day?</summary>
-        <div class="faq-body">
-          No. The build is entirely on the firm's web surface and structured-data layer. The day-to-day work of meeting buyers at houses, holding listings, and running closings is untouched. The goal is to make the work the firm already does findable in the channels buyers now use first.
-        </div>
-      </details>
-      <details class="faq">
-        <summary>What would the engagement actually look like in week one?</summary>
-        <div class="faq-body">
-          Week one is a kickoff conversation to confirm the facts above, gather real photography of the team and the office, and confirm the firm's preferred narrative voice. From there the schema build, the team page, and the relocation pages are scoped against the firm's existing website platform. Nothing in this audit assumes any particular CMS or hosting arrangement.
-        </div>
-      </details>
+<section class="block" id="day90">
+  <div class="wrap">
+    <div class="block-eyebrow">Day 90 Success</div>
+    <h2>What the audit looks like at the end of the plan</h2>
+    <p class="block-lede">A concrete definition of success so progress is measurable against the same five queries that opened this document.</p>
+
+    <div class="day90">
+      <h3>By the end of day ninety, the same five queries return the following</h3>
+      <ul>
+        <li>"De Pere real estate" surfaces Starry Realty inside the top cited results, anchored on the twelve-year operating record and the downtown 1888 office.</li>
+        <li>"Top Green Bay realtor 2018" surfaces Rich Starry by name, with the 2018 Greater Green Bay Realtors number-one ranking cited as a primary fact in the answer.</li>
+        <li>"Best real estate team De Pere Wisconsin" surfaces The Starrys as a named team result rather than a solo agent and rather than a franchise affiliate.</li>
+        <li>"Family real estate team Brown County" surfaces the mother-son operating structure of Rich Starry and Becki Starry as a primary fact in the answer.</li>
+        <li>"Historic downtown De Pere office real estate" surfaces 112 North Broadway, the 1888 origin, and the National Register listing with Starry Realty named as the current occupant.</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<footer class="site" id="contact">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h4>About this audit</h4>
-        <p>
-          This page is an independent search-visibility audit prepared for Starry Realty LLC by AG Consulting. It is shared as a one-way courtesy. No commercial relationship is implied or assumed by its existence.
-        </p>
-        <p>
-          The audit reflects AI search-engine results at the date of preparation. Search-engine outputs change frequently. The categorical observation about uncontested family-team queries in Northeast Wisconsin is the load-bearing finding.
-        </p>
-      </div>
-      <div class="footer-col">
-        <h4>Starry Realty LLC</h4>
-        <a href="./" aria-disabled="true">112 N Broadway</a>
-        <a href="./" aria-disabled="true">De Pere, Wisconsin</a>
-        <a href="./" aria-disabled="true">thestarrys.com</a>
-        <a href="./" aria-disabled="true">Facebook: The Starrys / Starry Realty</a>
-      </div>
-      <div class="footer-col">
-        <h4>Prepared by</h4>
-        <a href="https://andrei170.github.io/ag1/#services">AG Consulting</a>
-        <a href="https://andrei170.github.io/ag1/#services">Services overview</a>
-        <p class="signoff">
-          One-way courtesy audit. Reply at any time, or not at all. <a href="https://andrei170.github.io/ag1/#services">andrei170.github.io/ag1</a>
-        </p>
-      </div>
+<section class="block" id="engagement">
+  <div class="wrap">
+    <div class="block-eyebrow">Engagement</div>
+    <h2>How the work runs</h2>
+    <p class="block-lede">The engagement is built to fit a small independent firm. Rich and Becki stay in production; the technical work runs in the background and surfaces only at scheduled checkpoints.</p>
+
+    <div class="engagement">
+      <h3>Working arrangement</h3>
+      <ul>
+        <li>One forty-five-minute kickoff call with Rich to confirm the schema facts, the year-by-year production record, and the language Rich is comfortable having quoted on the founder profile pages.</li>
+        <li>One thirty-minute call with Becki to confirm the founder profile language for the second principal and the parent-relationship declaration.</li>
+        <li>Weekly written checkpoint, twenty minutes to read, summarizing what was published the prior week, what is scheduled the coming week, and what decision if any is needed from Rich or Becki.</li>
+        <li>Mid-engagement schema validation review on day forty-five, with all Rich Results Test outputs included.</li>
+        <li>End-of-engagement audit re-run on day ninety, using the same five queries and the same answer engines, with side-by-side before-and-after results.</li>
+      </ul>
     </div>
-    <div class="footer-disclaimer">
-      <p>
-        Real estate services in Wisconsin are regulated by the Wisconsin Department of Safety and Professional Services, Real Estate Examining Board. Any engagement that touches Starry Realty's licensed real estate activity will be conducted in compliance with WI REALTORS Code of Ethics, Article 12 (true picture in advertising) and Article 15 (truthful statements about other professionals), as well as applicable WI DSPS administrative code.
-      </p>
-      <p>
-        Starry Realty LLC is an Equal Housing Opportunity firm. All real estate activity referenced or implied on this page is conducted in compliance with the Federal Fair Housing Act and the Wisconsin Open Housing Law, which together prohibit discrimination in the sale, rental, or financing of housing on the basis of race, color, national origin, religion, sex, familial status, disability, ancestry, marital status, sexual orientation, lawful source of income, age, or status as a victim of domestic abuse.
-      </p>
-      <p>
-        Nothing on this page constitutes a solicitation of any property currently listed with another brokerage, legal advice, or a binding offer of services. Citations and audit results reflect publicly observable AI search outputs at the date of this audit and are not warranted to remain accurate as those systems evolve.
-      </p>
+
+    <div class="cta-block">
+      <h2>Ready to publish the schema layer</h2>
+      <p>The production record exists. The building exists. The family structure exists. The work is to make all three machine-readable so answer engines start citing Starry Realty by name for the queries it should already own. Discuss the engagement at the link below.</p>
+      <a href="https://andrei170.github.io/ag1/#services" class="cta-button">Continue the conversation</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-disclaimer"><strong>Regulatory note.</strong> Starry Realty LLC is a Wisconsin-licensed real estate brokerage operating under the Wisconsin Real Estate Examining Board and Chapter 452, Wisconsin Statutes. Advertising representations on this audit page conform to the conduct standards set out at Wis. Stat. section 452.18 for licensees. Nothing on this page constitutes legal, tax, investment, or contractual advice and nothing on this page is a guarantee of any outcome in a future real estate transaction. Any decision to list, buy, or sell real property should be made under separate written agreement with the firm.</p>
+
+    <p class="footer-disclaimer"><strong>Production-ranking source.</strong> The number-one ranked Greater Green Bay Realtors agent designation for 2015, 2016, 2017, and 2018 is attributed to internal annual production rankings published by the Greater Green Bay Realtors association. Member pool size of approximately five hundred fifty to six hundred-plus licensed agents reflects published association membership figures over the same period.</p>
+
+    <p class="footer-disclaimer"><strong>National Register note.</strong> The office building at 112 North Broadway, De Pere, Wisconsin is described in this audit as listed on the National Register of Historic Places, dated to 1888 and historically known as the "Former A's" building. The NRHP listing is a public record maintained by the National Park Service; the description here is intended as factual reference only and is not a claim of historical-preservation accreditation by Starry Realty LLC.</p>
+
+    <div class="footer-signoff">
+      <div>Search-Visibility Audit and AEO Plan prepared for Starry Realty LLC, doing business as The Starrys.</div>
+      <div><a href="https://andrei170.github.io/ag1/#services">https://andrei170.github.io/ag1/#services</a></div>
     </div>
   </div>
 </footer>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://thestarrys.com/#organization",
-      "name": "Starry Realty LLC",
-      "alternateName": "The Starrys",
-      "url": "https://thestarrys.com",
-      "foundingDate": "2014-01-01",
-      "description": "Mother-son family real estate team serving De Pere and Green Bay, Wisconsin since 2014.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "112 N Broadway",
-        "addressLocality": "De Pere",
-        "addressRegion": "WI",
-        "addressCountry": "US"
-      },
-      "sameAs": [
-        "https://www.facebook.com/p/The-Starrys-Starry-Realty-100063585518277/"
-      ],
-      "member": [
-        { "@id": "https://thestarrys.com/#rich-starry" },
-        { "@id": "https://thestarrys.com/#becki-starry" },
-        { "@id": "https://thestarrys.com/#mary-jo" }
-      ]
-    },
-    {
-      "@type": "RealEstateAgent",
-      "@id": "https://thestarrys.com/#localbusiness",
-      "name": "Starry Realty LLC",
-      "image": "https://thestarrys.com/team.jpg",
-      "url": "https://thestarrys.com",
-      "telephone": "",
-      "priceRange": "",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "112 N Broadway",
-        "addressLocality": "De Pere",
-        "addressRegion": "WI",
-        "postalCode": "",
-        "addressCountry": "US"
-      },
-      "areaServed": [
-        { "@type": "City", "name": "De Pere" },
-        { "@type": "City", "name": "Green Bay" }
-      ],
-      "foundingDate": "2014-01-01",
-      "parentOrganization": { "@id": "https://thestarrys.com/#organization" }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://thestarrys.com/#rich-starry",
-      "name": "Rich Starry",
-      "jobTitle": "Founder and Lead Agent",
-      "worksFor": { "@id": "https://thestarrys.com/#organization" },
-      "workLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "112 N Broadway",
-          "addressLocality": "De Pere",
-          "addressRegion": "WI",
-          "addressCountry": "US"
-        }
-      },
-      "description": "Founded Starry Realty LLC in 2014 after a 40-plus-year career in sales, marketing, and customer service. Leads the firm's De Pere and Green Bay buyer-side and listing work."
-    },
-    {
-      "@type": "Person",
-      "@id": "https://thestarrys.com/#becki-starry",
-      "name": "Becki Starry",
-      "jobTitle": "Agent",
-      "worksFor": { "@id": "https://thestarrys.com/#organization" },
-      "parent": { "@id": "https://thestarrys.com/#rich-starry-relation-context" },
-      "description": "Co-agent at Starry Realty LLC and mother of founder Rich Starry. Part of the firm's mother-son family team in De Pere, Wisconsin."
-    },
-    {
-      "@type": "Person",
-      "@id": "https://thestarrys.com/#mary-jo",
-      "name": "Mary Jo",
-      "jobTitle": "Office Manager",
-      "worksFor": { "@id": "https://thestarrys.com/#organization" },
-      "description": "Office manager for Starry Realty LLC. Coordinates listings, scheduling, and client communication for the De Pere family team."
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://thestarrys.com/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is this an SEO project or an AI search project?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "They overlap but they are not the same. Classic SEO ranks pages in Google's blue-link results. AI search optimization, sometimes called AEO, decides whether a generative engine cites the firm by name when a buyer asks a question in natural language. The structured-data work strengthens both, but the audit specifically measured the AI layer."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why does Starry Realty's website not already cover this?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The current site communicates the firm's story well to a human visitor. What it does not yet do is publish that story in the structured-data formats that AI engines parse when assembling an answer. The narrative is intact. The machine-readable layer is missing."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does this change how Rich, Becki, or Mary Jo work day to day?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. The build is entirely on the firm's web surface and structured-data layer. The day-to-day work of meeting buyers at houses, holding listings, and running closings is untouched."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What would the engagement look like in week one?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Week one is a kickoff conversation to confirm facts, gather real photography of the team and the office, and confirm the firm's preferred narrative voice. From there the schema build, the team page, and the relocation pages are scoped against the firm's existing website platform."
-          }
-        }
-      ]
-    }
-  ]
-}
-</script>
 
 </body>
 </html>
