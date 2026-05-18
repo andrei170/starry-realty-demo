@@ -474,8 +474,43 @@
     color: var(--cream);
   }
 
+  /* Verified imagery */
+  .verified-figures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .verified-figures figure {
+    margin: 0;
+    background: var(--cream);
+    border: 1px solid var(--sage);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .verified-figures img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+  .verified-figures figcaption {
+    padding: 0.8rem 1rem 0.95rem;
+    font-size: 0.82rem;
+    color: var(--slate);
+    line-height: 1.5;
+    border-top: 1px solid var(--sage);
+  }
+  .verified-figures figcaption strong {
+    color: var(--burgundy);
+    font-weight: 600;
+  }
+
   /* Responsive */
   @media (max-width: 760px) {
+    .verified-figures { grid-template-columns: 1fr; }
+    .verified-figures img { height: 220px; }
     .snapshot { grid-template-columns: 1fr; }
     .snapshot-label, .snapshot-value { padding: 0.85rem 1rem; }
     .snapshot-label { border-bottom: none; padding-bottom: 0.2rem; }
@@ -519,6 +554,17 @@
     <div class="block-eyebrow">Snapshot</div>
     <h2>Who is being audited</h2>
     <p class="block-lede">A factual baseline assembled from the publicly indexed surface of thestarrys.com, Greater Green Bay Realtors production records, and the National Register of Historic Places listing for 112 North Broadway.</p>
+
+    <div class="verified-figures">
+      <figure>
+        <img src="https://thestarrys.com/the-starry-story/the-team.jpg" alt="Rich Starry, Becki Starry, and office manager Mary Jo Danen of Starry Realty LLC, De Pere Wisconsin." loading="lazy">
+        <figcaption><strong>The Starrys.</strong> Rich Starry, Becki Starry, and office manager Mary Jo Danen. Mother-son family team operating Starry Realty LLC since March 2014. Image published by thestarrys.com.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://thestarrys.com/the-starry-story/historic.jpg" alt="The restored 1888 Former A's building at 112 North Broadway, De Pere, Wisconsin, listed on the National Register of Historic Places. Home of Starry Realty." loading="lazy">
+        <figcaption><strong>112 North Broadway, De Pere.</strong> The restored 1888 "Former A's" building. Listed on the National Register of Historic Places. Image published by thestarrys.com.</figcaption>
+      </figure>
+    </div>
 
     <div class="snapshot">
       <div class="snapshot-row">
